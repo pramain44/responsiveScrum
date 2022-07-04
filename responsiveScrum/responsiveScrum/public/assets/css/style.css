@@ -17,7 +17,7 @@ desktop : 1200px
     padding: 0;
 }
 
-body {
+html {
     scroll-behavior: smooth;
 }
 
@@ -167,7 +167,7 @@ header {
 
 #menu-toggle:checked ~ .menu li {
     height: 2.5em;
-    padding: 0.5em;
+    padding: 0.5rem 0rem;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -175,7 +175,7 @@ header {
     display: flex;
     justify-content: center;
     margin: 0;
-    padding: 0.5em 0;
+    padding: 0.5rem 0;
     width: 100%;
     color: white;
     background-color: rgba(242, 196, 153, 0.67);
@@ -230,8 +230,13 @@ header {
 
 /* Media Screen  */
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
     h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    h2 {
         font-size: 2.5rem;
         text-align: center;
     }
@@ -280,7 +285,7 @@ header {
     
     #menu-toggle:checked ~ .menu li {
         height: 2.5em;
-        padding: 0.5em;
+        padding: 0.5rem 0rem;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
     
@@ -310,3 +315,160 @@ header {
         width: 2rem;
     }
     }
+
+                        /* GALERIE */
+/* Taille et flex */
+.gallery {
+    background-color: #f2c499;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Container grid */
+.grid {
+    width: 90vw;
+    height: 100vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    'img1 img1 img2 img3'
+    'img4 img5 img5 img3'
+    'img4 img5 img5 img6'
+    'img7 img8 img9 img9';
+}
+    /* Specs grid par image */
+.img1 {
+    grid-area: img1;
+    overflow: hidden;
+}
+
+.img2 {
+    grid-area: img2;
+    overflow: hidden;
+}
+
+.img3 {
+    grid-area: img3;
+    overflow: hidden;
+}
+
+.img4 {
+    grid-area: img4;
+    overflow: hidden;
+}
+
+.img5 {
+    grid-area: img5;
+    overflow: hidden;
+}
+
+.img6 {
+    grid-area: img6;
+    overflow: hidden;
+}
+
+.img7 {
+    grid-area: img7;
+    overflow: hidden;
+}
+
+.img8 {
+    grid-area: img8;
+    overflow: hidden;
+}
+
+.img9 {            
+    grid-area: img9;
+    overflow: hidden;
+}       
+/* Bordure et Arrondi */
+.border {
+    border: 5px solid var(--colorTitle);
+    border-radius: 10px;
+}
+/* Dimension des images */
+.grid img {
+    height: 100%;
+}
+/* Dimension particulière pour 2 images */
+.grid .img1 img {
+    width: 100%;
+    height: auto;
+}
+
+.grid .img9 img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .grid {
+        width: 90vw;
+        height: 100vw;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        display: grid;
+        gap: .3rem;
+        grid-template-areas: 
+        'img1 img1 img2 img3'
+        'img4 img5 img5 img3'
+        'img4 img5 img5 img6';
+    }
+    
+    .border {
+        border: 2px solid var(--colorTitle);
+        border-radius: 10px;
+    }
+
+    .grid .img1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .img1 {
+        grid-area: img1;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+    .img2 {
+        grid-area: img2;
+        overflow: hidden;
+    }
+    
+    .img3 {
+        grid-area: img3;
+        overflow: hidden;
+    }
+    
+    .img4 {
+        grid-area: img4;
+        overflow: hidden;
+    }
+    
+    .img5 {
+        grid-area: img5;
+        overflow: hidden;
+    }
+    
+    .img6 {
+        grid-area: img6;
+        overflow: hidden;
+    }
+    
+    .img7 {
+        display: none;
+    }
+    
+    .img8 {
+        display: none;
+    }
+    
+    .img9 {            
+        display: none;
+    }       
+}
