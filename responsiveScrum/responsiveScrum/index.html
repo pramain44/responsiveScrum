@@ -4,33 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/assets/css/style.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 1200px)"href="./public/assets/css/style.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 992px)"href="./public/assets/css/styleMd.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 576px)"href="./public/assets/css/styleSm.css">
     <title>Bourse aux produits High Tech</title>
 </head>
 <body>
     <header id="landing">
+        <div class="headerNavbar">
             <nav>
                 <ul>
-                    <li><a href="#info">À-PROPOS</a></li>
+                    <li><a href="#info">À PROPOS</a></li>
                     <li><a href="#gallery">GALERIE</a></li>
                     <li><a href="#place">SECTEUR</a></li>
                     <li><a href="#form">PARTICIPER</a></li>
                 </ul>
             </nav>
-            <h1>HIGH-TECH AMIENS</h1>
-            <p>“Au lieu de jeter un casque gamer, tu peux le donner” : Aristote</p>
-            <p>Du 06/08 au 07/08</p>
-            <p>14h30 - 15h</p>
-            <div class="boxSocial">
-                <a href="https://www.instagram.com/hightechamiens/" target="_blank"><img src="./public/assets/icons/social/twitter.png" alt="Twitter"></a>
-                <a href="https://twitter.com/HightechAmiens" target="_blank"><img src="./public/assets/icons/social/instagram.png" alt="Instagram"></a>
-                <a href="https://www.facebook.com/LaManuFormation/" target="_blank"><img src="./public/assets/icons/social/facebook.png" alt="Facebook"></a>
+        </div>
+        <div class="headerContent">
+            <div class="headerPos">
+                <h1>La bourse High-Tech Amiénoise</h1>
+                <p>“Au lieu de jeter un casque gamer, tu peux le donner” : Aristote</p>
             </div>
-        <a href="#landing" id="homeButton"><img src="./public/assets/icons/home/home.png" alt="home button" title="Accueil"></a>
+        </div>
+        <div class="headerSocial">
+            <a href="https://www.instagram.com/hightechamiens/" target="_blank"><img src="./public/assets/icons/social/twitter.png" alt="Twitter"></a>
+            <a href="https://twitter.com/HightechAmiens" target="_blank"><img src="./public/assets/icons/social/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/LaManuFormation/" target="_blank"><img src="./public/assets/icons/social/facebook.png" alt="Facebook"></a>
+        </div>
     </header>
-    <main>
+    <!-- <main>
         <article class="info" id="info">
-            <h2 class="titreH2">À-PROPOS</h2>
+            <h2>À-PROPOS</h2>
             <div class="infoContainer">   
                 <img src="./public/assets/img/about.jpg" alt="">
                 <div class="infoText">
@@ -44,7 +49,7 @@
             </div>
         </article>
         <article class="gallery" id="gallery">
-            <h2 class="titreH2">GALERIE</h2>
+            <h2>GALERIE</h2>
             <div class="grid">
                 <div class="img1 border"><img src="./public/assets/img/banner.jpg" alt="Image 1" title="Image 1"></div>                
                 <div class="img2 border"><img src="./public/assets/img/grid2.jpg" alt="Image 2" title="Image 2" class="h"></div>                
@@ -72,7 +77,7 @@
             <div class="placeMap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.46840546889!2d2.2992870158809566!3d49.890008835468336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e7857c0e87f5fb%3A0x37fb21b742d12b66!2sLa%20Manu%20-%20Ecole%20sup%C3%A9rieure%20des%20m%C3%A9tiers%20du%20num%C3%A9rique!5e0!3m2!1sfr!2sfr!4v1656078517726!5m2!1sfr!2sfr" width="900" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         </article>
         <article class="form" id="form">
-            <h2 class="titreH2">PARTICIPER</h2>
+            <h2>PARTICIPER</h2>
             <div class="formContainer">
                 <div class="formBox1">
                     <p>Champs à renseigner</p>
@@ -121,6 +126,6 @@
         <div class="footerEmpty">
             <img src="./public/assets/icons/home/thierry.png" alt="thierry est bien trop fort">
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
