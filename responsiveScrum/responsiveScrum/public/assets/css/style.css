@@ -4,308 +4,41 @@ font-family: 'Merriweather', serif;     wght: 300 400 700 1,300 1,400 1,700
 font-family: 'Raleway', sans-serif;     wght: 300 400 500 600 700 800 1300
 */
 
-
 * {
     margin: 0;
     padding: 0;
 }
-
-/* SUPPRESSION DE LA SCROLLBAR DE MOOOOOORT */
-body::-webkit-scrollbar {
-    display: none;
-}
-
-                    /* RESSOURCE */
-/* Titre h2 */
-.titreH2 {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 96px;
-}
-
-
-
-
-                    /* HEADER */
-
-/* Taille, mise en place du background et flex */
-header {
-    width: 100vw;
-    height: 100vh;
-    padding-top: 0px;
-    background-image: linear-gradient(to bottom, rgba(242, 196, 153, 0.67), rgba(242, 196, 153, 0.67)), url(../img/RS15447_vendor3-qut.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-        /* NAV-BAR */
-/* Retrait du soulignement de lien */
-li a {
-    text-decoration: none;
-    color: #2d2f36;
-}
-/* Mise en forme du texte */
-nav ul {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 64px;
-    margin-top: 30px;
-}
-/* Mise en une seule ligne et marge entre les liens */
-nav ul li {
-    display: inline;
-    margin:40px;
-}
-/* Display du soulignement */
-header nav ul li a {
-    display: inline-block;
-}
-
-header nav ul li a::after {
-    content: '';
-    width: 0px;
-    height: 8px;
-    display: block;
-    background: black;
-    transition: 1s;
-}
-
-header nav ul li a:hover:after {
-    width: 100%;
-}
-/* Style du titre */
-h1 {
-    color: #2d2f36;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 150px;
-    text-align: center;
-    margin-top: 150px;
-    letter-spacing: 0.25em;
-}
-
-        /* CITATION */
-/* Style du paragraphe */
-header p {
-    color: #2d2f36;
-    font-family: 'Merriweather', serif;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 40px;
-    align-self: flex-start;
-    margin-left: 40px;
-}
-
-        /* RESEAUX SOCIAUX */
-/* Taille et positionnement de la box */
-.boxSocial {
-    position: absolute;
-    width: 274px;
-    height: 76px;
-    align-self: flex-end;
-    display: flex;
-    justify-content: space-between;
-    right: 76px;
-    bottom: 5%;
-}
-/* Redimension des images */
-header a img {
-    width: 76px;
-}
-
-/* BOUTON HOME */
-#homeButton {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    padding: 5px;
-    background-color: white;
-    opacity: 0.5;
-    border-radius: 10px;
-}
-
-#homeButton:active {
-    background-color: gray;
-}
-
-
-
-                    /* À-PROPOS */
-/* Taille et flex */
-.info {
-    width: 100vw;
-    height: 900px;
-    background-color: #2D2F36;
-    display: flex;
-    flex-direction: column;
-}
-/* Titre */
-.info h2 {
-    color: white;
-    align-self: flex-end;
-    margin-right: 20%;
-    margin-top: 20px;
-}
-/* Flex de l'image et de la box texte */
-.infoContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-/* Taille et bordure de l'image */
-.info img {
-    height: 700px;
-    border: 8px solid white;
-}
-/* Box des textes */
-.infoText {
-    width: 1100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-}
-/* Texte */
-.info p {
-    color: white;
-    font-family: "Merriweather", serif;
-    font-size: 36px;
-    font-weight: 300;
-    text-align: center;
-}
-
-
-
-
-                    /* GALERIE */
-/* Taille et flex */
-.gallery {
-    height: 2000px;
-    background-color: #f2c499;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-/* Couleur du titre */
-.gallery h2 {
-    color: #2d2f36;
-}
-/* Container grid */
-.grid {
-    width: 1500px;
-    height: 1500px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    display: grid;
-    grid-template-areas: 
-    'img1 img1 img2 img3'
-    'img4 img5 img5 img3'
-    'img4 img5 img5 img6'
-    'img7 img8 img9 img9';
-    gap: 20px;
-}
-    /* Specs grid par image */
-.img1 {
-    grid-area: img1;
-    overflow: hidden;
-}
-
-.img2 {
-    grid-area: img2;
-    overflow: hidden;
-}
-
-.img3 {
-    grid-area: img3;
-    overflow: hidden;
-}
-
-.img4 {
-    grid-area: img4;
-    overflow: hidden;
-}
-
-.img5 {
-    grid-area: img5;
-    overflow: hidden;
-}
-
-.img6 {
-    grid-area: img6;
-    overflow: hidden;
-}
-
-.img7 {
-    grid-area: img7;
-    overflow: hidden;
-}
-
-.img8 {
-    grid-area: img8;
-    overflow: hidden;
-}
-
-.img9 {            
-    grid-area: img9;
-    overflow: hidden;
-}       
-/* Bordure et Arrondi */
-.border {
-    border: 5px solid #2d2f36;
-    border-radius: 20px;
-}
-/* Dimension des images */
-.grid img {
-    height: 100%;
-}
-/* Dimension particulière pour 2 images */
-.grid .img1 img {
-    width: 100%;
-    height: auto;
-}
-
-.grid .img9 img {
-    width: 100%;
-    height: auto;
-}
-
-
-
-
                     /* SECTEUR */
 /* Background et flex */
 .place {
-    height: 900px;
+    height: 100vh;
     background-color: #2d2f36;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 /* Container des textes et cartes */
 .placeBox {
-    width: 800px;
-    height: 700px;
+    width: 40%;
+    height: auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 /* Titre */
 .place h2 {
+    font-size: 2.5rem;
     color: white;
 }
 /* Paragraphe */
 .place p {
+    width: 60%;
     color: white;
     font-family: "Merriweather", serif;
-    font-size: 36px;
-    font-weight: 300;
+    font-size: 1.5rem;
+    font-weight: 30;
     text-align: center;
 }
 /* Liste */
@@ -317,21 +50,28 @@ header a img {
     list-style: none;
     color: white;
     font-family: "Merriweather", serif;
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 1.5rem;
+    /* font-weight: 600; */
 }
 /* Taille des images de contact */
 .place .placeBox .placeInfo ul li img {
-    height: 50px;
+    width: 12%;
 }
-
-
-
+.placeMap {
+    padding: 5%;
+    width: 70%;
+    height: auto;
+}
+iframe {
+    height: 100%;
+    width: 100%;
+}
 
                     /* PARTICIPER */
 /* Bakcground et flex */
 .form {
     height: 900px;
+    width: 1000px;
     background-color: #f2c499;
     display: flex;
     flex-direction: column;
@@ -476,4 +216,50 @@ footer img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media (max-width:900px) {
+    .place {
+        height: 100vh;
+        width: 100vw;
+        flex-wrap: wrap;
+    }
+    .placeBox {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .place h2 {
+        font-size: 2rem;
+        color: white;
+    }
+    .place p {
+        width: 90vw;
+        color: white;
+        font-family: "Merriweather", serif;
+        font-size: 1.1rem;
+        font-weight: 30;
+        text-align: center;
+    }
+    .placeInfo ul {
+        list-style: none;
+        color: white;
+        font-family: "Merriweather", serif;
+        font-size: 1rem;
+        margin-left: 25px;
+    }
+    .placeInfo li{
+        margin-left: 5px;
+    }
+    .placeMap {
+        padding: 5%;
+        width: 90%;
+        height: auto;
+    }
+    .place .placeBox .placeInfo ul li img {
+        width: 12%;
+        padding-right: 4px;
+    }
 }
