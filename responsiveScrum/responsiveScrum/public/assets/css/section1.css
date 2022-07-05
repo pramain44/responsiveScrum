@@ -1,0 +1,47 @@
+.info {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2D2F36;
+    display: flex;
+    flex-direction: column;
+}
+/* Titre */
+.info h2 {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 60px;
+    align-self: center;
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+/* Flex de l'image et de la box texte */
+.infoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Taille et bordure de l'image */
+.info img {
+    height: 40vh;
+    border: 8px solid white;
+    width: 100%;
+    object-fit: cover;
+}
+/* Box des textes */
+.infoText {
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+/* Texte */
+.info p {
+    color: white;
+    font-family: "Merriweather", serif;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;  
+    height: auto;
+    padding: 1.5rem 0;
+}
