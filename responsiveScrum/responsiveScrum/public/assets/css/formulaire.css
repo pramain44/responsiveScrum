@@ -1,0 +1,92 @@
+                    /* PARTICIPER */
+/* Bakcground et flex */
+.form {
+    height: 100vh;
+    background-color: #f2c499;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+/* Titre */
+.form h2 {
+    color: #2d2f36;
+}
+/* Container des 2 box */
+.formContainer {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/* Style et flex de la premiere box */
+.formBox1 {
+    height: auto;
+    width: 90%;
+    height: 35vh;
+    background-color: #2d2f36;
+    border: 6px solid white;
+    margin-bottom: 2%;
+
+}
+/* Style et flex de la deuxieme box */
+.formBox2 {
+    height: 35vh;
+    width: 90%;
+    background-color: #2d2f36;
+    border: 6px solid white;
+    display: flex;
+    margin-top: 2%;
+}
+/* Style des titres des box */
+.form p {
+    color: white;
+    font-family: "Raleway", serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+/* Style des info */
+.form label {
+    font-size: 16px;
+    color: white;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+}
+
+.form input {
+    width: 80%;
+    font-size: 16px;
+
+}
+
+.formLineBox {
+    width: 50%;
+    align-self: center;
+}
+
+.form textarea {
+    width: 88%;
+    height: 60%;
+    font-size: 30px;
+    color: #757575;
+}
+
+.accept {
+    width: 250px;
+    height: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    background-color: #2d2f36;
+    border: 6px solid white;
+    text-decoration: none;
+}
+
+.titreH2 {
+    font-size: 60px;
+}
